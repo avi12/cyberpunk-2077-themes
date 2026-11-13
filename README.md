@@ -4,9 +4,9 @@ Two Edge themes in the Cyberpunk UX kit's red, cyan and teal, each a [WXT](https
 
 ![Cyberpunk 2077 Dark](docs/dark.png)
 
-| Package | Theme |
-|---|---|
-| `packages/dark` | Cyberpunk 2077 Dark |
+| Package          | Theme                |
+| ---------------- | -------------------- |
+| `packages/dark`  | Cyberpunk 2077 Dark  |
 | `packages/light` | Cyberpunk 2077 Light |
 
 ## Build
