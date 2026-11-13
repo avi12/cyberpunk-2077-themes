@@ -1,0 +1,112 @@
+{
+  "manifest_version": 3,
+  "name": "Cyberpunk 2077 Dark",
+  "version": "2.0.0",
+  "description": "Cyberpunk 2077 HUD chrome for Microsoft Edge - dark, in the Cyberpunk UX kit's red, cyan and teal.",
+  "theme": {
+    "images": {
+      "theme_frame": "images/frame.png",
+      "theme_frame_inactive": "images/frame_inactive.png",
+      "theme_ntp_background": "images/ntp.png"
+    },
+    "colors": {
+      "frame": [
+        2,
+        4,
+        6
+      ],
+      "frame_inactive": [
+        1,
+        2,
+        3
+      ],
+      "frame_incognito": [
+        10,
+        5,
+        8
+      ],
+      "frame_incognito_inactive": [
+        10,
+        5,
+        8
+      ],
+      "toolbar": [
+        5,
+        8,
+        12
+      ],
+      "tab_text": [
+        0,
+        166,
+        166
+      ],
+      "tab_background_text": [
+        0,
+        166,
+        166
+      ],
+      "tab_background_text_inactive": [
+        0,
+        166,
+        166
+      ],
+      "bookmark_text": [
+        255,
+        213,
+        64
+      ],
+      "toolbar_button_icon": [
+        86,
+        254,
+        255
+      ],
+      "omnibox_background": [
+        2,
+        48,
+        56
+      ],
+      "omnibox_text": [
+        86,
+        254,
+        255
+      ],
+      "ntp_background": [
+        5,
+        8,
+        12
+      ],
+      "ntp_text": [
+        255,
+        213,
+        64
+      ],
+      "ntp_link": [
+        86,
+        254,
+        255
+      ],
+      "ntp_header": [
+        247,
+        41,
+        68
+      ],
+      "button_background": [
+        5,
+        8,
+        12,
+        0
+      ]
+    },
+    "tints": {
+      "buttons": [
+        0.5,
+        1.0,
+        0.67
+      ]
+    },
+    "properties": {
+      "ntp_background_alignment": "center",
+      "ntp_background_repeat": "no-repeat"
+    }
+  }
+}
