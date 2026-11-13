@@ -2,6 +2,7 @@
   "name": "cyberpunk-2077-themes",
   "private": true,
   "scripts": {
+    "typecheck": "pnpm -r typecheck",
     "ext:build": "pnpm -r ext:build",
     "ext:zip": "pnpm -r ext:zip",
     "lint": "avi12-lint",
@@ -13,6 +14,8 @@
     "oxfmt-config-avi12": "github:avi12/lint-config#v0.4.11&path:/packages/oxfmt-config",
     "oxlint": "1.90.0",
     "oxlint-config-avi12": "github:avi12/lint-config#v0.4.11&path:/packages/oxlint-config",
-    "oxlint-plugin-naming": "github:avi12/lint-config#v0.4.11&path:/packages/oxlint-plugin-naming"
+    "oxlint-plugin-naming": "github:avi12/lint-config#v0.4.11&path:/packages/oxlint-plugin-naming",
+    "tsrs": "0.25.0-ts7.1.0-beta",
+    "wxt": "^0.20.27"
   }
 }

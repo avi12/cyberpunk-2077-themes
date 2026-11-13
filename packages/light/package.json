@@ -1,9 +1,12 @@
 {
   "name": "@cyberpunk-2077-themes/light",
-  "version": "2.0.0",
+  "version": "0.0.1",
   "private": true,
+  "author": "Avi <avi6106@gmail.com>",
   "type": "module",
   "scripts": {
+    "postinstall": "wxt prepare",
+    "typecheck": "tsrs -p .",
     "ext:build": "wxt build",
     "ext:zip": "wxt zip"
   },
