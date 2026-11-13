@@ -31,15 +31,21 @@ interface ThemeOptions {
 }
 
 // A theme has no code: the whole extension is its manifest and the images in public/.
-export function getThemeConfig({ name, description, author, colors, tints }: ThemeOptions): UserConfig {
-  return {
-    manifest({ browser }): UserManifest {
+export function getThemeConfig({ name, description, author, colors, tints }: ThemeOptions) {
+  const config: UserConfig = {
+    manifest({ browser }) {
       return {
         name,
         description,
-        // Firefox takes "Name <email>"; wxt types the Chrome shape, {email}
-        ...(browser === "firefox" && ({ author } as unknown as UserManifest)),
-        theme: { images: IMAGES, colors, tints, properties: PROPERTIES }
+        ...(browser === "firefox" && {
+          author
+        }),
+        theme: {
+          images: IMAGES,
+          colors,
+          tints,
+          properties: PROPERTIES
+        }
       };
     },
     publicDir: "public",
@@ -47,9 +53,10 @@ export function getThemeConfig({ name, description, author, colors, tints }: The
     hooks: {
       "build:done"(wxt) {
         rmSync(join(wxt.config.outDir, PLACEHOLDER_OUTPUT), { force: true });
-      mkdirSync(join(wxt.config.outDir, dirname(NEW_TAB_BACKGROUND)), { recursive: true });
-      cpSync(SHARED_BACKGROUND, join(wxt.config.outDir, NEW_TAB_BACKGROUND));
+        mkdirSync(join(wxt.config.outDir, dirname(NEW_TAB_BACKGROUND)), { recursive: true });
+        cpSync(SHARED_BACKGROUND, join(wxt.config.outDir, NEW_TAB_BACKGROUND));
       }
     }
   };
+  return config;
 }

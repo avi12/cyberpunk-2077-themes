@@ -6,9 +6,23 @@
       "error",
       {
         "presets": ["webextension-manifest"],
-        "allowedNames": [{ "reason": "WXT names its build hook with a colon", "names": ["build:done"] }]
+        "allowedNames": [
+          {
+            "reason": "WXT names its build hook with a colon",
+            "names": ["build:done"]
+          }
+        ]
       }
     ]
   },
-  "ignorePatterns": ["**/dist/**", "**/.output/**", "**/.wxt/**", "**/node_modules/**"]
+  "ignorePatterns": ["**/dist/**", "**/.output/**", "**/.wxt/**", "**/node_modules/**"],
+  "overrides": [
+    {
+      "files": ["packages/*/wxt.config.ts"],
+      "rules": {
+        "house/no-magic-numbers": "off",
+        "house/no-parent-imports": "off"
+      }
+    }
+  ]
 }
