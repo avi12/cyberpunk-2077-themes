@@ -4,6 +4,8 @@ Two Edge themes in the Cyberpunk UX kit's red, cyan and teal, each a [WXT](https
 
 ![Cyberpunk 2077 Dark](docs/dark.png)
 
+For the full browser Cyberpunk overhaul, use [Edge+](https://github.com/avi12/edge-plus).
+
 | Package          | Theme                |
 | ---------------- | -------------------- |
 | `packages/dark`  | Cyberpunk 2077 Dark  |
