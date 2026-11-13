@@ -1,0 +1,8 @@
+{
+  "name": "cyberpunk-2077-themes",
+  "private": true,
+  "scripts": {
+    "ext:build": "pnpm -r ext:build",
+    "ext:zip": "pnpm -r ext:zip"
+  }
+}
