@@ -13,7 +13,7 @@ export default defineConfig({
   publicDir: "public",
   outDir: "dist",
   hooks: {
-    "build:done": (wxt) => {
+    "build:done"(wxt) {
       rmSync(join(wxt.config.outDir, PLACEHOLDER_OUTPUT), { force: true });
     }
   }
