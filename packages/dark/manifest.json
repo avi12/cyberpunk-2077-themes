@@ -5,9 +5,9 @@
   "description": "Cyberpunk 2077 HUD chrome for Microsoft Edge - dark, in the Cyberpunk UX kit's red, cyan and teal.",
   "theme": {
     "images": {
-      "theme_frame": "images/frame.png",
-      "theme_frame_inactive": "images/frame_inactive.png",
-      "theme_ntp_background": "images/ntp.png"
+      "theme_frame": "images/window-frame.png",
+      "theme_frame_inactive": "images/window-frame-inactive.png",
+      "theme_ntp_background": "images/new-tab-background.png"
     },
     "colors": {
       "frame": [2, 4, 6],

@@ -5,9 +5,9 @@
   "description": "Cyberpunk 2077 HUD for daylight - Edge theme, in the Cyberpunk UX kit's ink, red and cyan.",
   "theme": {
     "images": {
-      "theme_frame": "images/frame.png",
-      "theme_frame_inactive": "images/frame_inactive.png",
-      "theme_ntp_background": "images/ntp.png"
+      "theme_frame": "images/window-frame.png",
+      "theme_frame_inactive": "images/window-frame-inactive.png",
+      "theme_ntp_background": "images/new-tab-background.png"
     },
     "colors": {
       "frame": [213, 228, 240],
