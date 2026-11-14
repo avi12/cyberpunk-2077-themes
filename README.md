@@ -27,7 +27,7 @@ A theme has no code: each package's `wxt.config.ts` manifest is the whole theme 
 
 ## License
 
-[Apache 2.0](LICENSE). Redistributions and derivative works must keep the copyright notice and the [NOTICE](NOTICE) file, which credits Avi (avi12).
+[Apache 2.0](LICENSE). Redistributions and derivative works must keep the copyright notice and the [NOTICE](NOTICE) file, which credits Avi ([avi12.com](https://avi12.com)).
 
 ## Support
 
