@@ -37,6 +37,7 @@ export function getThemeConfig({ name, description, author, colors, tints }: The
       return {
         name,
         description,
+        icons: { 128: "icon-128.png" },
         ...(browser === "firefox" && {
           author
         }),
