@@ -28,3 +28,7 @@ A theme has no code: each package's `wxt.config.ts` manifest is the whole theme 
 [Apache 2.0](LICENSE). Redistributions and derivative works must keep the copyright notice and the [NOTICE](NOTICE) file, which credits Avi (avi12).
 
 "Cyberpunk 2077" is a trademark of CD PROJEKT S.A. This is an unofficial fan project, not affiliated with or endorsed by CD PROJEKT.
+
+## Support
+
+[GitHub Sponsors](https://github.com/sponsors/avi12) or [PayPal](https://www.paypal.com/paypalme/avi12).
