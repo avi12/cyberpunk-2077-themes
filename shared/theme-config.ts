@@ -26,12 +26,13 @@ interface ThemeOptions {
   name: string;
   description: string;
   author: string;
+  geckoId: string;
   colors: Theme["colors"];
   tints: Theme["tints"];
 }
 
 // A theme has no code: the whole extension is its manifest and the images in public/.
-export function getThemeConfig({ name, description, author, colors, tints }: ThemeOptions) {
+export function getThemeConfig({ name, description, author, geckoId, colors, tints }: ThemeOptions) {
   const config: UserConfig = {
     manifest({ browser }) {
       return {
@@ -39,7 +40,8 @@ export function getThemeConfig({ name, description, author, colors, tints }: The
         description,
         icons: { 128: "icon-128.png" },
         ...(browser === "firefox" && {
-          author
+          author,
+          browser_specific_settings: { gecko: { id: geckoId } }
         }),
         theme: {
           images: IMAGES,

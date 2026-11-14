@@ -8,6 +8,7 @@ export default defineConfig(
     name: "Cyberpunk 2077 Dark",
     description: "Cyberpunk 2077 dark theme for your browser.",
     author: packageJson.author,
+    geckoId: "cyberpunk-2077-dark@avi12.com",
     colors: {
       frame: [2, 4, 6],
       frame_inactive: [1, 2, 3],
