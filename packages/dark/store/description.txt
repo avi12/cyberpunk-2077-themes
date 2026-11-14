@@ -1,0 +1,8 @@
+Night City after dark, in your browser.
+
+A dark HUD theme for your browser: near-black frame, cyan tab text, red alerts, and the neon skyline behind every new tab. No scripts, no permissions, no data collected.
+
+For the full browser Cyberpunk overhaul, use Edge+ (https://github.com/avi12/edge-plus) with Cyberpunk 2077 New Tab (https://github.com/avi12/cyberpunk-2077-new-tab)
+
+Unofficial fan project, not affiliated with CD PROJEKT.
+Open source under Apache 2.0: https://github.com/avi12/cyberpunk-2077-themes
