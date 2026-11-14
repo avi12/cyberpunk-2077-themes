@@ -1,6 +1,6 @@
 # Cyberpunk 2077 themes
 
-[![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/fdniepnomknkniipnhignpjmblobockh?label=Cyberpunk%202077%20Dark)](https://chromewebstore.google.com/detail/fdniepnomknkniipnhignpjmblobockh)
+[![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/fdniepnomknkniipnhignpjmblobockh?label=Cyberpunk%202077%20Dark)](https://chromewebstore.google.com/detail/fdniepnomknkniipnhignpjmblobockh) [![Firefox Add-ons users](https://img.shields.io/amo/users/cyberpunk-2077-dark@avi12.com?label=Cyberpunk%202077%20Dark)](https://addons.mozilla.org/firefox/addon/cyberpunk-2077-dark@avi12.com/)
 
 Two browser themes in the Cyberpunk UX kit's red, cyan and teal, each a [WXT](https://wxt.dev) extension.
 
