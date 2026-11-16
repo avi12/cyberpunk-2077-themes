@@ -8,9 +8,9 @@ Two browser themes in the Cyberpunk UX kit's red, cyan and teal, each a [WXT](ht
 
 > **Not affiliated.** This is an unofficial fan project. It is not affiliated with, endorsed by or sponsored by CD PROJEKT S.A. or CD PROJEKT RED. "Cyberpunk 2077" is a trademark of CD PROJEKT S.A.
 
-![Cyberpunk 2077 Light](https://github.com/user-attachments/assets/e630505c-ea5c-43cf-8742-78d906cd3904)
+![Cyberpunk 2077 Light](docs/screenshot-light.png)
 
-![Cyberpunk 2077 Dark](https://github.com/user-attachments/assets/8a8fb1cc-1493-4f8d-907e-670e6a6451b1)
+![Cyberpunk 2077 Dark](docs/screenshot-dark.png)
 
 For the full browser Cyberpunk overhaul, use [Edge+](https://github.com/avi12/edge-plus) with [Cyberpunk 2077 New Tab](https://github.com/avi12/cyberpunk-2077-new-tab)
 
