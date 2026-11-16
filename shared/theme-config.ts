@@ -6,8 +6,13 @@ import type { UserConfig, UserManifest } from "wxt";
 
 const PLACEHOLDER_OUTPUT = "placeholder.js";
 const NEW_TAB_BACKGROUND = "images/new-tab-background.png";
-// One 4K picture for every theme, copied into each build instead of duplicated per package
-const SHARED_BACKGROUND = join(dirname(fileURLToPath(import.meta.url)), "new-tab-background.png");
+const SHARED_DIR = dirname(fileURLToPath(import.meta.url));
+// One picture per browser family, shared by every theme and copied into each build instead of duplicated per package.
+// Chrome (and Edge, which installs the Chrome build) gets the smaller one, Firefox the full 4K one.
+const BACKGROUNDS = {
+  chrome: join(SHARED_DIR, "new-tab-background-chrome.png"),
+  firefox: join(SHARED_DIR, "new-tab-background-firefox.png")
+};
 
 const IMAGES = {
   theme_frame: "images/window-frame.png",
@@ -57,7 +62,7 @@ export function getThemeConfig({ name, description, author, geckoId, colors, tin
       "build:done"(wxt) {
         rmSync(join(wxt.config.outDir, PLACEHOLDER_OUTPUT), { force: true });
         mkdirSync(join(wxt.config.outDir, dirname(NEW_TAB_BACKGROUND)), { recursive: true });
-        cpSync(SHARED_BACKGROUND, join(wxt.config.outDir, NEW_TAB_BACKGROUND));
+        cpSync(wxt.config.browser === "firefox" ? BACKGROUNDS.firefox : BACKGROUNDS.chrome, join(wxt.config.outDir, NEW_TAB_BACKGROUND));
       }
     }
   };

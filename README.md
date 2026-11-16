@@ -27,7 +27,7 @@ pnpm ext:build   # packages/<theme>/dist/chrome-mv3, load it unpacked
 pnpm ext:zip     # builds first, then zips for the stores
 ```
 
-A theme has no code: each package's `wxt.config.ts` manifest is the whole theme (colours, tints, images) and `public/images/` holds the frame pictures, and `shared/new-tab-background.png` is the one 2560x1440 new tab picture both themes copy into their build (Edge refuses a theme image over about 4 megapixels, so it cannot be 4K).
+A theme has no code: each package's `wxt.config.ts` manifest is the whole theme (colours, tints, images) and `public/images/` holds the frame pictures, and `shared/new-tab-background-chrome.png` (2730x1536) and `shared/new-tab-background-firefox.png` (4K) are the new tab pictures both themes copy into their build, per browser (Edge refuses a theme image over about 4 megapixels, so it cannot get the 4K one).
 
 ## License
 
