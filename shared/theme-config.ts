@@ -25,6 +25,19 @@ const PROPERTIES = {
   ntp_background_repeat: "no-repeat"
 };
 
+// Firefox ignores Chrome's omnibox_* keys and paints the address bar from toolbar_field*, so those are derived from them.
+function withFirefoxAddressBar(colors: Theme["colors"]): Theme["colors"] {
+  if (!colors) return colors;
+  const { omnibox_background, omnibox_text } = colors;
+  return {
+    ...colors,
+    toolbar_field: omnibox_background,
+    toolbar_field_focus: omnibox_background,
+    toolbar_field_text: omnibox_text,
+    toolbar_field_text_focus: omnibox_text
+  };
+}
+
 type Theme = NonNullable<UserManifest["theme"]>;
 
 interface ThemeOptions {
@@ -50,7 +63,7 @@ export function getThemeConfig({ name, description, author, geckoId, colors, tin
         }),
         theme: {
           images: IMAGES,
-          colors,
+          colors: browser === "firefox" ? withFirefoxAddressBar(colors) : colors,
           tints,
           properties: PROPERTIES
         }
